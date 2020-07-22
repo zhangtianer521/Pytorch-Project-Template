@@ -24,8 +24,8 @@ def print_cuda_statistics():
     import torch
     logger.info('__Python VERSION:  {}'.format(sys.version))
     logger.info('__pyTorch VERSION:  {}'.format(torch.__version__))
-    logger.info('__CUDA VERSION')
-    call(["nvcc", "--version"])
+    # logger.info('__CUDA VERSION')
+    # call(["/usr/home/cuda/bin/nvcc", "--version"])
     logger.info('__CUDNN VERSION:  {}'.format(torch.backends.cudnn.version()))
     logger.info('__Number CUDA Devices:  {}'.format(torch.cuda.device_count()))
     logger.info('__Devices')
